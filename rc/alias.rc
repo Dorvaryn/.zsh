@@ -1,0 +1,20 @@
+alias ls="ls -h --color=auto"
+alias ll="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
+alias c="cd"
+
+alias du="du -h"
+alias df="df -h"
+
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+
+alias ping="ping -c 4"
+alias pi="ping -c 1"
+alias cl="clear"
+alias pr="ps aux | cat"
+
+alias grep="grep --colour=auto"
+

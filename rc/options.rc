@@ -1,0 +1,11 @@
+setopt autocd autopushd pushdignoredups
+setopt extendedglob
+setopt histignorespace histreduceblanks
+setopt appendhistory incappendhistory sharehistory histexpiredupsfirst histignoredups histsavenodups histignorealldups
+setopt notify
+setopt cbases
+
+unsetopt hashcmds
+unsetopt bgnice
+unsetopt beep
+unsetopt nomatch
