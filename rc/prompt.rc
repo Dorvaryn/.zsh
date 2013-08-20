@@ -26,7 +26,7 @@ if [[ $UID -ge 1000 ]]; then # normal user
     eval PR_HOST='${PR_BOLD}${PR_GREEN}%M${PR_NO_COLOR}' # no SSH
   fi
 
-  local return_code="%(?..%{$PR_RED%}%? ↵%{$PR_NO_COLOR%})"
+  local return_code="%(?..%{$PR_RED%}%? <-/%{$PR_NO_COLOR%})"
 
   local user_host='${PR_USER}${PR_CYAN}@${PR_HOST}'
   local current_dir='%{$PR_BOLD$PR_MAGENTA%}%~%{$PR_NO_COLOR%}'
@@ -50,9 +50,10 @@ fi
 
 local git_branch='$(git_prompt_info)%{$PR_NO_COLOR%}'
 
-#PROMPT="${user_host} ${current_dir} ${git_branch}$PR_PROMPT "
-PROMPT="╭─${user_host} ${current_dir} ${git_branch}
-╰─$PR_PROMPT "
+PROMPT="/--${user_host} ${current_dir} ${git_branch}
+\--> "
+#PROMPT="╭─${user_host} ${current_dir} ${git_branch}
+#╰─$PR_PROMPT "
 RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$PR_YELLOW%}‹"
