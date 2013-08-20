@@ -15,9 +15,9 @@ alias gc='git commit -v'
 compdef _git gc=git-commit
 alias gca='git commit -v -a'
 compdef _git gca=git-commit
-alias glol='git log --graph --decorate --pretty=format:"%C(bold yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
+alias glol='git log --graph --decorate --pretty=format:"%C(bold yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold white)— %an%Creset" --abbrev-commit --date=relative'
 compdef _git glol=git-log
-alias glola='git log --graph --decorate --pretty=format:"%C(bold yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --all --date=relative'
+alias glola='git log --graph --decorate --pretty=format:"%C(bold yellow)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold white)— %an%Creset" --abbrev-commit --all --date=relative'
 compdef _git glola=git-log
 alias gco='git checkout'
 compdef _git gco=git-checkout
