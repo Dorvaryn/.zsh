@@ -13,7 +13,7 @@ fi
 #
 # Use this when creating a new repo from scratch.
 empty_gh() { # [NAME_OF_REPO]
-    repo = $1
+    repo=$1
     ghuser=$(  git config github.user )
 
     mkdir "$repo"
@@ -31,7 +31,8 @@ empty_gh() { # [NAME_OF_REPO]
 # Use this when you have a directory that is not yet set up for git.
 # This function will add all non-hidden files to git.
 new_gh() { # [DIRECTORY]
-    cd "$1"
+    repo=$1
+    cd "$repo"
     ghuser=$( git config github.user )
 
     git init
