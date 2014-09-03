@@ -18,3 +18,4 @@ alias pr="ps aux | cat"
 
 alias grep="grep --colour=auto"
 
+alias fuck="sudo \`history -1 | awk '{ \$1=\"\"; print \$0 }'\`"
